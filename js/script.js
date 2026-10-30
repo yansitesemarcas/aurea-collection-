@@ -55,7 +55,9 @@ if (toggle && menu) {
 const video = document.querySelector(".hero__video");
 if (video) {
   video.muted = true;
-  const tentar = () => video.play().catch(() => {});
+  const exibirControlesSeFalhar = () => { video.controls = true; };
+  const tentar = () => video.play().catch(exibirControlesSeFalhar);
+  video.addEventListener("error", exibirControlesSeFalhar);
   tentar();
   document.addEventListener("touchstart", tentar, { once: true, passive: true });
 }
