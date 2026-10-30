@@ -1,9 +1,9 @@
 /* Auréa Collection — scripts */
 const WHATSAPP = "5519996748141";
 const PRODUTOS = [
-  { nome: "Bracelete de Coração", categoria: "Braceletes", descricao: "Bracelete delicado com acabamento dourado e detalhes em formato de coração. Uma peça minimalista que combina elegância e romantismo.", preco: 59.90, imagem: "assets/bracelete-coracao.jpg", alt: "Bracelete dourado com dois corações nas extremidades, sobre fundo turquesa" },
-  { nome: "Brinco Estrela-do-Mar", categoria: "Brincos", descricao: "Brinco delicado em formato de estrela-do-mar, com acabamento prateado e design inspirado na beleza do oceano.", preco: 39.90, imagem: "assets/brinco-estrela-mar.jpg", alt: "Par de brincos prateados em formato de estrela-do-mar, sobre fundo turquesa" },
-  { nome: "Colar Coração Azul", categoria: "Colares", descricao: "Colar delicado com corrente prateada e pingente de coração azul intenso. Uma peça charmosa para complementar diferentes estilos.", preco: 69.90, imagem: "assets/colar-coracao-azul.jpg", alt: "Colar prateado com pingente de coração azul, sobre fundo turquesa" }
+  { nome: "Bracelete de Coração", categoria: "Braceletes", descricao: "Bracelete delicado com acabamento dourado e detalhes em formato de coração. Uma peça minimalista que combina elegância e romantismo.", preco: 59.90, imagem: "bracelete-coracao.jpg", alt: "Bracelete dourado com dois corações nas extremidades, sobre fundo turquesa" },
+  { nome: "Brinco Estrela-do-Mar", categoria: "Brincos", descricao: "Brinco delicado em formato de estrela-do-mar, com acabamento prateado e design inspirado na beleza do oceano.", preco: 39.90, imagem: "brinco-estrela-mar.jpg", alt: "Par de brincos prateados em formato de estrela-do-mar, sobre fundo turquesa" },
+  { nome: "Colar Coração Azul", categoria: "Colares", descricao: "Colar delicado com corrente prateada e pingente de coração azul intenso. Uma peça charmosa para complementar diferentes estilos.", preco: 69.90, imagem: "colar-coracao-azul.jpg", alt: "Colar prateado com pingente de coração azul, sobre fundo turquesa" }
 ];
 const formatarPreco = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 function linkWhatsApp(produto) {
