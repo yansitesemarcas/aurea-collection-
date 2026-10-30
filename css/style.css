@@ -69,8 +69,8 @@ a { color: inherit; }
 .rodape__contato a { display: flex; align-items: center; gap: 12px; text-decoration: none; padding: 8px 0; width: fit-content; }
 .rodape__contato a:hover span { text-decoration: underline; text-underline-offset: 4px; }
 .rodape__contato svg { width: 26px; height: 26px; fill: none; stroke: var(--turquesa); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.rodape__logo { display: flex; justify-content: flex-end; }
-.rodape__logo img { width: min(200px, 100%); height: auto; }
+.rodape__logo { display: flex; justify-content: flex-end; align-items: center; }
+.rodape__logo img { width: min(190px, 100%); aspect-ratio: 1; height: auto; object-fit: contain; padding: 14px; border-radius: 50%; background: var(--azul-claro); box-shadow: 0 8px 28px rgba(0,0,0,.18); }
 @media (max-width: 960px) { .grid, .pilares { grid-template-columns: repeat(2, 1fr); } .pilares li:last-child { grid-column: 1 / -1; } }
 @media (max-width: 720px) {
   .nav__toggle { display: block; }
